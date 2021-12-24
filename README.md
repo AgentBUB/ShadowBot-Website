@@ -1,7 +1,5 @@
-# Infinity Bot Website
+# Squad Bot Website
 
-### Create a fork and start a website for your discord bot!
+### Here's the [website](https://bot.agentsquad.org), if you wanna take a look!
 
-### Here's the [website](https://infinitybot.tk), if you wanna take a look!
-
-### All forks and stars are appreciated!
+### All stars are appreciated, but I recommend you check out the original repository!
