@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+html,
+body {
+
+    margin: 0;
+
+    padding: 0;
+
+    overflow-x: hidden;
+
+}
+</style>
+
+<head>
+    <?php
+  $META_TITLE = "Squad Bot | Privacy Policy & ToS";
+  require_once("modules/meta.php");
+  ?>
+</head>
+
+<body oncontextmenu="return false">
+    <?php
+  include_once('./modules/header.php');
+  ?>
+    <hr />
+    <section class="text-gray-400 body-font bg-gray-900">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-20">
+                <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
+                    <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">
+                        Privacy Policy & ToS
+                    </h1>
+                    <p class="lg:w-1/2 w-full leading-relaxed text-opacity-80">
+                        By using the bot, You agree to our Privacy Policy and ToS.
+                    </p>
+                    <br />
+                    <div class="flex justify-left">
+                        <button
+                            class="inline-flex text-white bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 rounded text-lg">
+                            <a href="#privacy-policy">Privacy Policy</a>
+                        </button>
+                        <button
+                            class="ml-4 inline-flex text-white bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
+                            <a href="#tos">ToS</a>
+                        </button>
+                    </div>
+                    <div id="all" style="margin-top: 2em;">
+                        <div class="flex flex-wrap -m-4" id="privacy-policy">
+                            <h1
+                                class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white text-center w-full mx-auto">
+                                <br />
+                                Privacy Policy
+                            </h1>
+                            <div class="xl:w-1/3 md:w-1/2 p-4">
+                                <div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
+                                    <h2 class="text-lg text-indigo-400 font-medium title-font mb-2">
+                                        What data do we collect?
+                                    </h2>
+                                    <p class="leading-relaxed text-base">
+                                        The main data the bot collects is related to servers, channels, emojis, and
+                                        roles. The only user data collect is IDs, discriminators, user names, and other
+                                        public information. We do not collect any personal or account credentials.
+                                        Overall most data collect is public or accessable by server admins.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="xl:w-1/3 md:w-1/2 p-4">
+                                <div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
+                                    <h2 class="text-lg text-indigo-400 font-medium title-font mb-2">
+                                        Why we need this data?
+                                    </h2>
+                                    <p class="leading-relaxed text-base">
+                                        The data is required for the proper functioning of the bot
+                                        features like warning system, logging, backups, etc.
+                                        Without this data, our bot will not be able to perform
+                                        a majority of its functions and thus making the features inaccessible
+                                        for users.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="xl:w-1/3 md:w-1/2 p-4">
+                                <div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
+                                    <h2 class="text-lg text-indigo-400 font-medium title-font mb-2">
+                                        How we use this data?
+                                    </h2>
+                                    <p class="leading-relaxed text-base">
+                                        As previsously mentioned, the bot uses the collected data to run a majority of
+                                        its functions. User IDs are used to identify the users, channel IDs are used to
+                                        identify channels for sending messages or other actions, role IDs are used to
+                                        give roles, etc.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="xl:w-1/3 md:w-1/2 p-4">
+                                <div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
+                                    <h2 class="text-lg text-indigo-400 font-medium title-font mb-2">
+                                        How is the data stored and how long?
+                                    </h2>
+                                    <p class="leading-relaxed text-base">
+                                        The data is stored as long as the bot requires it. Most of the time the bot will
+                                        request data then uncache it after excuting the needed command. Some commands
+                                        may require data to be stored in the cache for longer time periods or
+                                        perminately. But the main way of data storage is the sqlite database the bot
+                                        currently pulls from.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="xl:w-1/3 md:w-1/2 p-4">
+                                <div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
+                                    <h2 class="text-lg text-indigo-400 font-medium title-font mb-2">
+                                        Who do we share the data with?
+                                    </h2>
+                                    <p class="leading-relaxed text-base">
+                                        No one! Your data is completely sealed within our sqlite database on our private
+                                        server. Only the ASP CEO can access the database and he never needs to. So, no
+                                        one reads the data except the bot.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="xl:w-1/3 md:w-1/2 p-4">
+                                <div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
+                                    <h2 class="text-lg text-indigo-400 font-medium title-font mb-2">
+                                        Got concerns or Queries?
+                                    </h2>
+                                    <p class="leading-relaxed text-base">
+                                        If you have any concerns or queries relating our privacy
+                                        policy please contact us via the <a href="./support">support server</a>.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap -m-4" id="tos">
+                                <h1
+                                    class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white text-center w-full mx-auto">
+                                    <br />Terms of Service
+                                </h1>
+                                <div class="xl:w-1/3 md:w-1/2 p-4">
+                                    <div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
+                                        <h2 class="text-lg text-indigo-400 font-medium title-font mb-2">
+                                            Introduction to Agent Squad&trade; Productions
+                                        </h2>
+                                        <p class="leading-relaxed text-base">
+                                            We are Agent Squad&trade; Productions, a company that strives to make top
+                                            quality products at affordable prizes. Squad Bot is
+                                            multi-pupose bot which has been created by the CEO, Agent BUB, on the 4th
+                                            August, 2020 under the ASP Bot Project. For more info about Agent
+                                            Squad&trade; Productions head to <a href="https://agentsquad.org/aboutus"
+                                                target="_blank">this site</a>.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="xl:w-1/3 md:w-1/2 p-4">
+                                    <div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
+                                        <h2 class="text-lg text-indigo-400 font-medium title-font mb-2">
+                                            Legal Age
+                                        </h2>
+                                        <p class="leading-relaxed text-base">
+                                            You may not use Squad Bot or any of Squad Bot's services
+                                            if you're under 13 years of age, which is the age required to use Discord.
+                                            If caught being underaged, We have full rights to ban
+                                            you from our using our bot, its services, and your account will be
+                                            reported to Discord's Safety Team.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="xl:w-1/3 md:w-1/2 p-4">
+                                    <div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
+                                        <h2 class="text-lg text-indigo-400 font-medium title-font mb-2">
+                                            Proper Usage
+                                        </h2>
+                                        <p class="leading-relaxed text-base">
+                                            You may not <abbr
+                                                title="Spamming errors, Trying to Break bot by continued use of Bugged Commands in a open/closed channel.">abuse</abbr>
+                                            Squad Bot or any of Squad Bot's services in any shape or form. Using the bot
+                                            in any malicious manner to harm or abuse others is strickly prohibitted. Any
+                                            of this will result in a lifetime ban from using bot and other actions being
+                                            taken if needed.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="xl:w-1/3 md:w-1/2 p-4">
+                                    <div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
+                                        <h2 class="text-lg text-indigo-400 font-medium title-font mb-2">
+                                            Prohibitions
+                                        </h2>
+                                        <p class="leading-relaxed text-base">
+                                            You may not use Squad Bot or any of its services for any act that is against
+                                            Discord, Agent Squad&trade; Productions, or the Bot's Terms of Service. If
+                                            you are caught doing any such acts, we will ban you from using our services
+                                            and report your account to <abbr
+                                                title="if Discord ToS is violated">Discord's Safety Team</abbr>.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="xl:w-1/3 md:w-1/2 p-4">
+                                    <div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
+                                        <h2 class="text-lg text-indigo-400 font-medium title-font mb-2">
+                                            Changes to Privacy Policy and ToS
+                                        </h2>
+                                        <p class="leading-relaxed text-base">
+                                            We have the full right to change, modify, or amend these ToS and Privacy
+                                            Policy at anytime without notice. And all changes, modifications, and
+                                            admendments will be enforced on publishing to the public website build
+                                            unless stated otherwise.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="xl:w-1/3 md:w-1/2 p-4">
+                                    <div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
+                                        <h2 class="text-lg text-indigo-400 font-medium title-font mb-2">
+                                            Intellectual Property
+                                        </h2>
+                                        <p class="leading-relaxed text-base">
+                                            Squad Bot has been developed as a Agent Squad&trade; Prodcutions Project.
+                                            All of its services are Copyrights and Intellectual Properties are owned by
+                                            ASP. We know that some aspects of our bot are <abbr
+                                                title="such as names like 'Ticket System'">public use</abbr>, but all
+                                            <abbr title="such as the actual code, logo, etc">private content</abbr> are
+                                            owned by Agent Squad&trade; Prodcutions.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr />
+    <?php
+  include_once('./modules/footer.php');
+  ?>
+</body>
+
+</html>

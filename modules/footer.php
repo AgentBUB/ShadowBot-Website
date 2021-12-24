@@ -1,0 +1,23 @@
+<footer class="text-gray-400 bg-gray-900 body-font">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+            <img src="./img/SquadBotLogo.png" width="40" height="40" style="border-radius: 1.5em;" />
+            <span class="ml-3 text-xl">Squad Bot</span>
+        </a>
+        <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">
+            Copyright © 2020 - <?= date('Y') ?> <a href="https://agentsquad.org" target="_blank">Agent Squad&trade;
+                Productions</a> - All Rights Reserved
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            <a href="./info" class="ml-3 text-gray-400">
+                <i class="fas fa-info-circle"></i>
+            </a>
+            <a href="https://top.gg/bot/740023863479631943" target="_blank" class="ml-3 text-gray-400">
+                <i class="fab fa-discord"></i>
+            </a>
+        </span>
+    </div>
+</footer>
+<noscript>
+    Please enable JavaScript in your browser, to view this page properly!
+</noscript>
