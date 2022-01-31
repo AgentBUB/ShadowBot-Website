@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 5000
+const port = 3003
 
 app.set('view engine', 'ejs')
 app.use(express.static('public'))
@@ -26,14 +26,20 @@ app.get('/policies', (req, res) => {
 })
 
 app.get('/thanks', (req, res) => {
-  res.status(200).render('thanks')
+  if (req.query.error === undefined && req.query.code === undefined)
+    return res.status(200).render('thanks')
+  if (req.query.error) {
+    return res.status(200).redirect('https://bots.agentsquad.org')
+  } else {
+    res.status(200).redirect('https://bots.agentsquad.org/thanks')
+  }
 })
 
 app.get('/invite', (req, res) => {
   res
     .status(200)
     .redirect(
-      'https://discord.com/oauth2/authorize?client_id=740023863479631943&permissions=1513938742527&scope=bot'
+      'https://discord.com/oauth2/authorize?client_id=740023863479631943&permissions=1513938742527&scope=bot&response_type=code&redirect_uri=https://bots.agentsquad.org/thanks'
     )
 })
 
