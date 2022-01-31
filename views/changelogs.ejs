@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+html,
+body {
+
+    margin: 0;
+
+    padding: 0;
+
+    overflow-x: hidden;
+
+}
+</style>
+
+<head>
+    <%- include('_meta', {title: 'Squad Bot | Changelogs', desc: null, img: null}); %>
+</head>
+
+<body oncontextmenu="return false">
+    <%- include('_header'); %>
+    <hr />
+    <section class="text-gray-400 body-font bg-gray-900">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-20">
+                <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
+                    <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">
+                        Change Logs
+                    </h1>
+                    <p class="lg:w-1/2 w-full leading-relaxed text-opacity-80">
+                        Get the latest info about Squad Bots's Updates.
+                    </p>
+                    <br />
+                    <div class="flex justify-center">
+                        <button
+                            class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+                            <a href="#latest-version">Latest</a>
+                        </button>
+                        <button
+                            class="ml-4 inline-flex text-white bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
+                            <a href="#version-3.0.0">v3.0.0</a>
+                        </button>
+                        <button
+                            class="ml-4 inline-flex text-white bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
+                            <a href="#version-2.5-earlier">v2.5.0 &amp; Earlier</a>
+                        </button>
+                    </div>
+                </div>
+                <div id="all">
+                    <div class="flex flex-wrap -m-4" id="latest-version">
+                        <h1
+                            class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white text-center w-full mx-auto">
+                            <br />Latest Version [v4.0.0-stable]
+                        </h1>
+                        <div class="xl:w-1/3 md:w-1/2 p-4">
+                            <div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
+                                <h2 class="text-lg text-indigo-400 font-medium title-font mb-2">
+                                    What's New?
+                                </h2>
+                                <p class="leading-relaxed text-base">
+                                    The majority of this update was to move the bot from Discordjs v12 to v13. Below is
+                                    a list of the major changes.
+                                    <u>
+                                        <li>
+                                            Polished message delete & update logs.
+                                        </li>
+                                        <li>
+                                            Added react command.
+                                        </li>
+                                        <li>
+                                            Removed supremify command.
+                                        </li>
+                                        <li>
+                                            Added color info command.
+                                        </li>
+                                        <li>
+                                            Update poll command (emoji options).
+                                        </li>
+                                        <li>
+                                            Embed command revamped. There is now a simple & advanced creator. This
+                                            allows for quick or more in depth embeds.
+                                        </li>
+                                        <li>
+                                            Ban command now can ban users not in guild.
+                                        </li>
+                                        <li>
+                                            New fields added to serverinfo such as banner link and accent color.
+                                        </li>
+                                        <li>
+                                            The ticket system transcripts has been fixed up to work smoother and provide
+                                            a better look.
+                                        </li>
+                                    </u>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="xl:w-1/3 md:w-1/2 p-4">
+                            <div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
+                                <h2 class="text-lg text-indigo-400 font-medium title-font mb-2">
+                                    Other Changes
+                                </h2>
+                                <p class="leading-relaxed text-base">
+                                    Bug fixes across the board leading to short downtime or other crashes.
+                                    <u>
+                                        <li>
+                                            Moved commands in the "Others" catigory to "Util".
+                                        </li>
+                                        <li>
+                                            Moved poll command to message
+                                        </li>
+                                    </u>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="xl:w-1/3 md:w-1/2 p-4">
+                            <div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
+                                <h2 class="text-lg text-indigo-400 font-medium title-font mb-2">
+                                    Important Info
+                                </h2>
+                                <p class="leading-relaxed text-base">
+                                    With this being a brand new version of Discord JS there could be some bugs we do not
+                                    know of at launch; however, we have done plenty of testing so everything should work
+                                    fine. Please contact us in the support server if you find any bugs.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap -m-4" id="latest-version">
+                            <h1
+                                class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white text-center w-full mx-auto">
+                                <br />v3.0.0-stable
+                            </h1>
+                            <div class="xl:w-1/3 md:w-1/2 p-4">
+                                <div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
+                                    <h2 class="text-lg text-indigo-400 font-medium title-font mb-2">
+                                        What's New?
+                                    </h2>
+                                    <p class="leading-relaxed text-base">
+                                        In this update we have removed all pay-locked content. This means every command,
+                                        limit, and restriction setup requiring users to pay for Squad Bot Premium has
+                                        been
+                                        removed.
+                                        <br>
+                                        We completely reworked the Ticket System. Now the setup runs a creation promot
+                                        which
+                                        will create a message users react to via clicking a button. All emojis were
+                                        replaced
+                                        with buttons within the ticket system.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="xl:w-1/3 md:w-1/2 p-4">
+                                <div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
+                                    <h2 class="text-lg text-indigo-400 font-medium title-font mb-2">
+                                        Other Changes
+                                    </h2>
+                                    <p class="leading-relaxed text-base">
+                                        Fixed some bugs in the, Ticket System and Reaction Role System.<br>Made minor
+                                        adustments to make things smoother with button interaction and general usage.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="xl:w-1/3 md:w-1/2 p-4">
+                                <div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
+                                    <h2 class="text-lg text-indigo-400 font-medium title-font mb-2">
+                                        Important Info
+                                    </h2>
+                                    <p class="leading-relaxed text-base">
+                                        We are aware of some issues with the new ticket system and are working to fix
+                                        them.
+                                        We also will be fully updating the bot to discord js v13-stable soon.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-wrap -m-4" id="version-2.5-earlier">
+                                <h1
+                                    class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white text-center w-full mx-auto">
+                                    <br />Version 2.5.0 &amp; Earlier
+                                </h1>
+                                <div class="xl:w-1/3 md:w-1/2 p-4">
+                                </div>
+                                <div class="xl:w-1/3 md:w-1/2 p-4">
+                                    <div class="border border-gray-700 border-opacity-75 p-6 rounded-lg">
+                                        <h2 class="text-lg text-indigo-400 font-medium title-font mb-2">
+                                            Information
+                                        </h2>
+                                        <p class="leading-relaxed text-base">
+                                            We saddly do not have a complete record of any version older then v3.0.0.
+                                            Most
+                                            of the updates prior to this would've inculded commands such as reaction
+                                            roles,
+                                            backup system, etc.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="xl:w-1/3 md:w-1/2 p-4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <hr />
+    <%- include('_footer'); %>
+</body>
+
+</html>
