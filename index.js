@@ -29,9 +29,9 @@ app.get('/thanks', (req, res) => {
   if (req.query.error === undefined && req.query.code === undefined)
     return res.status(200).render('thanks')
   if (req.query.error) {
-    return res.status(200).redirect('https://bots.agentsquad.org')
+    return res.status(200).redirect('https://bots.shadowdevs.com')
   } else {
-    res.status(200).redirect('https://bots.agentsquad.org/thanks')
+    res.status(200).redirect('https://bots.shadowdevs.com/thanks')
   }
 })
 
@@ -39,7 +39,7 @@ app.get('/invite', (req, res) => {
   res
     .status(200)
     .redirect(
-      'https://discord.com/oauth2/authorize?client_id=740023863479631943&permissions=1513938742527&scope=bot&response_type=code&redirect_uri=https://bots.agentsquad.org/thanks'
+      'https://discord.com/oauth2/authorize?client_id=740023863479631943&permissions=1513938742527&scope=bot&response_type=code&redirect_uri=https://bots.shadowdevs.com/thanks'
     )
 })
 
