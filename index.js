@@ -39,6 +39,10 @@ app.get('/thanks', (req, res) => {
 	}
 });
 
+app.get('/code', (req, res) => {
+	res.status(200).redirect('https://github.com/Shadow-Develops/shadow-bot');
+});
+
 app.get('/invite', (req, res) => {
 	res
 		.status(200)
